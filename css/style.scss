@@ -1,0 +1,321 @@
+$header-blue: #344258;
+$text-blue: #08172d;
+$border-blue: #00264c;
+$bgc-footer-blue: #0d1b2b;
+$link-blue: #3d95e3;
+$line-link-blue: #0058a7;
+$form-input-blue: #243448;
+$form-link-blue: #4c89c1;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro.eot') format('eot'),
+  url('../fonts/DINPro.woff') format('woff'),
+  url('../fonts/DINPro.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'DINPro-Medium';
+  src: url('../fonts/DINPro-Medium.eot') format('eot'),
+  url('../fonts/DINPro-Medium.woff') format('woff'),
+  url('../fonts/DINPro-Medium.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'DINPro-Bold';
+  src: url('../fonts/DINPro-Bold.eot') format('eot'),
+  url('../fonts/DINPro-Bold.woff') format('woff'),
+  url('../fonts/DINPro-Bold.ttf') format('truetype');
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+.projects {
+  .projects__content {
+    padding-right: 45px;
+    @media (max-width: 1199px) {
+      padding-right: 15px;
+    }
+
+    .projects__content-heading {
+      font-family: "DINPro", sans-serif;
+      text-transform: uppercase;
+      color: $header-blue;
+      font-size: 45px;
+      text-align: center;
+      margin: 67px 0;
+      @media (max-width: 500px) {
+        font-size: 30px;
+      }
+    }
+
+    .projects__content-text {
+      font-family: "Myriad Pro", sans-serif;
+      color: $text-blue;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 0 30px;
+    }
+  }
+
+  .projects__examples {
+    margin: 115px 135px 0 65px;
+    @media (max-width: 1199px) {
+      margin: 115px 10% 0;
+    }
+    @media (max-width: 630px) {
+      margin: 115px 3% 0;
+    }
+
+    .projects__example {
+      padding: 0;
+      position: relative;
+      @media (max-width: 991px) {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .projects__example-image {
+        width: 100%;
+      }
+
+      .projects__example-text {
+        font-family: "DINPro-Bold", sans-serif;
+        position: absolute;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        bottom: 45px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .projects__example-button {
+        position: absolute;
+        display: block;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-family: "DINPro-Bold", sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        width: 60%;
+        height: 60px;
+        border: 3px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+        -webkit-transition: opacity 0.2s ease-out;
+        -moz-transition: opacity 0.2s ease-out;
+        -o-transition: opacity 0.2s ease-out;
+        transition: opacity 0.2s ease-out;
+        opacity: 0;
+      }
+      
+      .projects__example-bgc {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.35);
+        -webkit-transition: opacity 0.2s ease-out;
+        -moz-transition: opacity 0.2s ease-out;
+        -o-transition: opacity 0.2s ease-out;
+        transition: opacity 0.2s ease-out;
+        opacity: 0;
+      }
+    }
+
+    .projects__example:hover {
+      .projects__example-button {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .projects__example-bgc {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .projects__button {
+      font-family: "DINPro-Bold", sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $header-blue;
+      display: block;
+      margin: 83px auto 105px;
+      width: 100%;
+      max-width: 360px;
+      height: 60px;
+      border: 3px solid $border-blue;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.contacts {
+  background-color: $bgc-footer-blue;
+
+  .contacts__container {
+    margin: 0 13% 0 21%;
+    box-sizing: border-box;
+    @media (max-width: 1550px) {
+      margin: 0 10%;
+    }
+    @media (max-width: 630px) {
+      margin: 0 3%;
+    }
+
+    .contacts__content {
+      width: 54%;
+      @media (max-width: 1199px) {
+        width: 49%;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        text-align: center;
+      }
+
+      .contacts__content-heading {
+        font-family: "DINPro-Bold", sans-serif;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 87px 0 72px;
+      }
+
+      .contacts__content-text {
+        font-family: "Myriad Pro", sans-serif;
+        color: #fff;
+        font-size: 18px;
+        margin: 0 0 30px;
+      }
+
+      .contacts__content-communication {
+        .footer__content-text_big {
+          display: block;
+          font-family: "Myriad Pro", sans-serif;
+          color: #fff;
+          font-size: 30px;
+          margin: 0 0 -2px;
+        }
+
+        .footer__content-text_big:hover {
+          text-decoration: none;
+        }
+
+        .footer__content-text_big:first-of-type {
+          margin-top: 60px;
+        }
+
+        .footer__content-text_link {
+          font-family: "Myriad Pro", sans-serif;
+          margin: 70px 0 0;
+          color: $link-blue;
+          font-size: 18px;
+        }
+
+        .footer__content-text_link:first-of-type:before {
+          display: block;
+          position: absolute;
+          content: '';
+          background-color: $line-link-blue;
+          height: 105px;
+          width: 3px;
+          top: 58px;
+          left: -30px;
+          @media (max-width: 1650px) {
+            left: -10px;
+          }
+          @media (max-width: 1550px) and (min-width: 1350px){
+            left: -30px;
+          }
+          @media (max-width: 1199px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .contacts__feedback {
+      align-self: flex-start;
+      border: 5px solid $form-input-blue;
+      padding: 38px;
+      margin: 30px 0 95px;
+      width: 45%;
+      @media (max-width: 1199px) {
+        width: 50%;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      .contacts__form {
+        .contacts__form-input {
+          font-family: "DINPro-Medium", sans-serif;
+          background-color: $form-input-blue;
+          color: #fff;
+          padding: 23px 0 23px 30px;
+          font-size: 15px;
+          width: 100%;
+          border: none;
+          margin: 0 0 2px;
+        }
+
+        .contacts__form-input::placeholder {
+          color: #fff;
+        }
+
+        .contacts__form-textarea {
+          height: 110px;
+          resize: none;
+        }
+
+        .contacts__form-link {
+          font-family: "DINPro-Medium", sans-serif;
+          font-size: 14px;
+          color: $form-link-blue;
+          text-decoration: underline;
+          text-align: center;
+          display: block;
+          margin: 10px auto 19px;
+          position: relative;
+        }
+
+        .contacts__form-button {
+          font-family: "DINPro-Bold", sans-serif;
+          font-size: 18px;
+          color: #fff;
+          display: block;
+          margin: 0 auto;
+          height: 60px;
+          max-width: 290px;
+          width: 100%;
+          background-color: transparent;
+          border: 3px solid #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
