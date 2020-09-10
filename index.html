@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Agency</title>
+</head>
+<body>
+    <main>
+        <section class="projects">
+            <div class="container projects__content">
+                <h2 class="projects__content-heading">Реализованные проекты</h2>
+                <p class="projects__content-text">Коммуникационное агентство – часть многофункционального холдинга, объединяющего
+                    различные компании на территории России и ближнего зарубежья</p>
+                <p class="projects__content-text">Наши подходы к организации бизнеса и имеющиеся ресурсы позволяют одинаково эффективно
+                    обеспечивать реализацию как крупномасштабных федеральных или международных проектов, так и решать небольшие локальные
+                    задачи. Мы находимся в постоянном развитии, расширяя и укрепляя имеющиеся бизнес-направления, а также формируя новые.</p>
+            </div>
+            <div class="row projects__examples">
+                <div class="col-sm-12 col-lg-4 projects__example">
+                    <img class="projects__example-image" src="img/Hue_Saturation3.png" alt="">
+                    <p class="projects__example-text">Республика Саха</p>
+                    <div class="projects__example-bgc"></div>
+                    <button class="projects__example-button"
+                            onclick="openModal('img/Hue_Saturation3.png', 'Республика Саха', 'Республика Саха')">Подробнее</button>
+                </div>
+                <div class="col-sm-12 col-lg-4 projects__example">
+                    <img class="projects__example-image" src="img/Hue_Saturation2.png" alt="">
+                    <p class="projects__example-text">Газпром</p>
+                    <div class="projects__example-bgc"></div>
+                    <button class="projects__example-button"
+                            onclick="openModal('img/Hue_Saturation2.png', 'Газпром', 'Газпром')">Подробнее</button>
+                </div>
+                <div class="col-sm-12 col-lg-4 projects__example">
+                    <img class="projects__example-image" src="img/Hue_Saturation1.png" alt="">
+                    <p class="projects__example-text">Nokia</p>
+                    <div class="projects__example-bgc"></div>
+                    <button class="projects__example-button"
+                            onclick="openModal('img/Hue_Saturation1.png', 'Nokia', 'Nokia')">Подробнее</button>
+                </div>
+                <button class="projects__button">Загрузить еще</button>
+            </div>
+
+        </section>
+        <footer class="contacts">
+            <div class="contacts__container row">
+                <div class="contacts__content">
+                    <h2 class="contacts__content-heading">Контакты</h2>
+                    <p class="contacts__content-text">Коммуникационное агентство</p>
+                    <p class="contacts__content-text">344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12<br>
+                        Бизнес–центр «Рост», оф. 104</p>
+                    <div class="row contacts__content-communication">
+                        <div class="col-xl-6">
+                            <a class="footer__content-text_big" href="tel:+78613001128">+7 (861) 300-11-28</a>
+                            <a class="footer__content-text_big" href="tel:+78613001152">+7 (861) 300-11-52</a>
+                            <a class="footer__content-text_big" href="tel:+78613001152">+7 (861) 300-11-52</a>
+                        </div>
+                        <div class="col-xl-6">
+                            <p class="footer__content-text_link">Email:</p>
+                            <a class="footer__content-text_link" href="mailto: info@example.com">info@example.com</a><br><br>
+                            <a class="footer__content-text_link" href="https://www.facebook.com/Exampleagency/">
+                                Facebook.com/exampleagency</a></div>
+                    </div>
+                </div>
+                <div class="contacts__feedback">
+                    <form action="" class="contacts__form">
+                        <input class="contacts__form-input" type="text" placeholder="Полное имя" required>
+                        <input class="contacts__form-input" type="text" placeholder="E-mail" required>
+                        <input class="contacts__form-input" type="text" placeholder="Телефон" required>
+                        <textarea class="contacts__form-input contacts__form-textarea" required
+                                  name="" id="" cols="30" rows="10" placeholder="Пожалуйста, опишите задачу"></textarea>
+                        <a class="contacts__form-link" href="">Политика обработки персональных данных</a>
+                        <button class="contacts__form-button">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
